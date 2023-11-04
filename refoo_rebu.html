@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReFoo</title>
+</head>
+<body>
+    <h1>쿡사이클링 웹</h1>
+    <p>음식과 리사이클링을 공유하세요!</p>
+
+    <form>
+        <label for="userInput">리뷰 작성:</label>
+        <textarea id="userInput" rows="4" cols="50"></textarea>
+        <button type="button" onclick="submitReview()">제출</button>
+    </form>
+
+    <div id="reviews">
+        <!-- 리뷰가 여기에 추가될 것입니다. -->
+    </div>
+
+    <script>
+        function submitReview() {
+            // 입력된 리뷰 내용 가져오기
+            var userInput = document.getElementById("userInput").value;
+
+            // 리뷰를 표시할 div 엘리먼트 생성
+            var reviewDiv = document.createElement("div");
+            reviewDiv.textContent = userInput;
+
+            // 리뷰를 reviews 섹션에 추가
+            var reviewsSection = document.getElementById("reviews");
+            reviewsSection.appendChild(reviewDiv);
+
+            // 입력 칸 비우기
+            document.getElementById("userInput").value = "";
+        }
+    </script>
+</body>
+</html>

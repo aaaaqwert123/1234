@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover Effect</title>
+    <style>
+        .element {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .element:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="element" id="change-color">마우스 갖다 대면 색깔이 바뀝니다.</div>
+    <script>
+        const element = document.getElementById('change-color');
+
+        element.addEventListener('mouseenter', () => {
+            element.style.backgroundColor = '#e74c3c';
+        });
+
+        element.addEventListener('mouseleave', () => {
+            element.style.backgroundColor = '#3498db';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* refoo_main.css */
+.login-signup {
+    text-align: right;
+    padding: 10px;
+}
+
+.login-button, .signup-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+#menu-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu-items {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#menu-items li {
+    padding: 10px;
+}
+
+#menu-items li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#menu-button:focus + #menu-items {
+    display: block;
+}
+
+.full-screen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('full-screen-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-item {
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}.full-screen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('full-screen-image.jpg'); /* 초기 이미지 파일 경로 지정 */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.menu-item#remaining-foods:hover ~ .full-screen-image {
+    background-image: url('full-screen-image2.jpg'); /* 남은 음식 이미지 파일 경로 지정 */
+}
+
+.menu-item {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; /* 마우스 갖다대면 크기 변화 효과 */
+    font-size: 36px; /* 글자 크기를 크게 설정 */
+}
+
+.menu-item p {
+    font-size: 24px; /* 글자 크기를 조금 작게 설정 */
+}
+
+.menu-item:hover {
+    transform: scale(1.2); /* 마우스 갖다대면 크기 확대 */
+}
+
+.menu-item img {
+    width: 120px; /* 이미지 너비를 조절하여 확대 */
+    height: auto; /* 이미지 높이를 자동 조정 */
+}
+a {
+    text-decoration: none;
+}

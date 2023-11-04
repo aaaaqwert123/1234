@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReFoo - 홈</title>
+    <link rel="stylesheet" type="text/css" href="refoo_main.css">
+</head>
+<body>
+    <!-- 로그인 및 회원가입 버튼을 최상단에 위치 -->
+    <div class="login-signup">
+        <a href="refoo_id.html" class="login-button">로그인</a>
+        <button class="signup-button">회원가입</button>
+        <div class="menu">
+            <button id="menu-button">메뉴</button>
+            <ul id="menu-items">
+                <li><a href="#" data-index="0">항목 1</a></li>
+                <li><a href="#" data-index="1">항목 2</a></li>
+                <li><a href="#" data-index="2">항목 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="favicon.png" alt="ReFoo 로고">
+        <span class="logo-text">ReFoo(리푸)</span>
+    </div>
+    <div class="full-screen-image" id="image-container" data-image-index="0">
+        <div class="overlay">
+            <a href="remaining-foods.html" class="menu-item" data-index="0">
+                <p>남은 음식 처리하기</p>
+            </a>
+            <a href="community.html" class="menu-item" data-index="1">
+                <p>커뮤니티</p>
+            </a>
+            <a href="recipe.html" class="menu-item" data-index="2">
+                <p>요리 레시피</p>
+            </a>
+        </div>
+    </div>
+    <script src="refoo_main.js"></script>
+</body>
+</html>
